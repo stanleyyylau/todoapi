@@ -7,7 +7,7 @@ var express = require('express'),
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGOURL || 'mongodb://localhost/Tododb', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/Tododb', {
     useMongoClient: true
 });
 
